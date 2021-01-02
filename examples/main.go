@@ -4,7 +4,7 @@ import (
 	"os"
 	"fmt"
 	"io/ioutil"
-	"pineapple/src"
+	"github.com/karminski/pineapple/src"
 )
 
 func main() {

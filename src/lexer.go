@@ -204,4 +204,3 @@ func (lexer *Lexer) MatchToken() (lineNum int, tokenType int, token string) {
 func isLetter(c byte) bool {
     return c >= 'a' && c <= 'z' || c >= 'A' && c <= 'Z'
 }
-
