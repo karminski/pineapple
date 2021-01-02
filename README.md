@@ -12,7 +12,7 @@ Pineapple Lang is a simple programming language demo. It includes a hand-written
 # How to run
 
 ```terminal
-$cd examples
+$cd examples/pineapple/
 $go build
 $ ./pineapple hello-world.pineapple
 pen pineapple apple pen.

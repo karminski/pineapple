@@ -12,7 +12,7 @@ pineapple lang 是一个简单的编程语言 demo. 它包含了个手写的递�
 # 运行
 
 ```terminal
-$cd examples
+$cd examples/pineapple/
 $go build
 $ ./pineapple hello-world.pineapple
 pen pineapple apple pen.
