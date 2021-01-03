@@ -11,10 +11,10 @@ const (
     TOKEN_EOF         = iota  // end-of-file
     TOKEN_VAR_PREFIX          // $
     TOKEN_LEFT_PAREN          // (
-	TOKEN_RIGHT_PAREN         // )
-	TOKEN_EQUAL 			  // =
-	TOKEN_QUOTE         	  // "
-	TOKEN_DUOQUOTE 			  // ""
+    TOKEN_RIGHT_PAREN         // )
+    TOKEN_EQUAL               // =
+    TOKEN_QUOTE               // "
+    TOKEN_DUOQUOTE            // ""
     TOKEN_NAME                // name
     TOKEN_PRINT               // print                
 )
@@ -23,10 +23,10 @@ var tokenNameMap = map[int]string{
     TOKEN_EOF           : "EOF",
     TOKEN_VAR_PREFIX    : "$",
     TOKEN_LEFT_PAREN    : "(",
-	TOKEN_RIGHT_PAREN   : ")",    
-	TOKEN_EQUAL 		: "=",
-	TOKEN_QUOTE         : "\"",
-	TOKEN_DUOQUOTE 		: "\"\"",
+    TOKEN_RIGHT_PAREN   : ")",    
+    TOKEN_EQUAL         : "=",
+    TOKEN_QUOTE         : "\"",
+    TOKEN_DUOQUOTE      : "\"\"",
     TOKEN_NAME          : "name",
     TOKEN_PRINT         : "print",
 }
@@ -57,7 +57,7 @@ func (lexer *Lexer) GetLineNum() int {
 
 func (lexer *Lexer) NextTokenIs(tokenType int) (lineNum int, token string) {
     nowLineNum, nowTokenType, nowToken := lexer.GetNextToken()
-	// syntax error
+    // syntax error
     if tokenType != nowTokenType {
         err := fmt.Sprintf("NextTokenIs(): syntax error near '%s'.", nowToken) 
         panic(err)
@@ -68,7 +68,7 @@ func (lexer *Lexer) NextTokenIs(tokenType int) (lineNum int, token string) {
 func (lexer *Lexer) LookAhead() int {
     // lexer.nextToken* already setted
     if lexer.nextTokenLineNum > 0 {
-		return lexer.nextTokenType
+        return lexer.nextTokenType
     }
     // set it
     nowLineNum                := lexer.lineNum

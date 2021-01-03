@@ -21,7 +21,8 @@ pen pineapple apple pen.
 
 # Tutorial
 
-- [Build a Programming language in 450 lines - 1, Start with EBNF](./DOCUMENTS/tutorial-1-start-with-ebnf.md)
+- [Build a Programming language in 450 lines - 1, Start with EBNF](https://zhuanlan.zhihu.com/p/341405385)
+- [Build a Programming language in 450 lines - 2, Two Magic](https://zhuanlan.zhihu.com/p/341532964)
 - To be continued.
 
 # Contributors

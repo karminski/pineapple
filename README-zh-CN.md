@@ -21,7 +21,8 @@ pen pineapple apple pen.
 
 # 小教程
 
-- [牙医教你 450 行代码自制编程语言 - 1, 从 EBNF 开始](./DOCUMENTS/tutorial-1-start-with-ebnf.md)
+- [牙医教你 450 行代码自制编程语言 - 1, 从 EBNF 开始](https://zhuanlan.zhihu.com/p/341405385)
+- [牙医教你 450 行代码自制编程语言 - 2, 两个魔法就可以实现永动机](https://zhuanlan.zhihu.com/p/341532964)
 - 未完待续
 
 # Contributors
