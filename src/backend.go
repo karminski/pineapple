@@ -76,7 +76,3 @@ func resolvePrint(g *GlobalVariables, print *Print) error {
     fmt.Print(str)
     return nil
 }
-
-func (g *GlobalVariables) loadVariable(name string, value string) {
-    g.Variables[name] = value
-}
