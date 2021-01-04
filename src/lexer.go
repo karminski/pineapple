@@ -15,8 +15,9 @@ const (
     TOKEN_EQUAL               // =
     TOKEN_QUOTE               // "
     TOKEN_DUOQUOTE            // ""
-    TOKEN_NAME                // name
-    TOKEN_PRINT               // print                
+    TOKEN_NAME                // Name ::= [_A-Za-z][_0-9A-Za-z]*
+    TOKEN_PRINT               // print
+    TOKEN_IGNORED             // Ignored                
 )
 
 var tokenNameMap = map[int]string{
@@ -27,8 +28,9 @@ var tokenNameMap = map[int]string{
     TOKEN_EQUAL         : "=",
     TOKEN_QUOTE         : "\"",
     TOKEN_DUOQUOTE      : "\"\"",
-    TOKEN_NAME          : "name",
+    TOKEN_NAME          : "Name",
     TOKEN_PRINT         : "print",
+    TOKEN_IGNORED       : "Ignored",
 }
 
 var keywords = map[string]int{
@@ -59,10 +61,23 @@ func (lexer *Lexer) NextTokenIs(tokenType int) (lineNum int, token string) {
     nowLineNum, nowTokenType, nowToken := lexer.GetNextToken()
     // syntax error
     if tokenType != nowTokenType {
-        err := fmt.Sprintf("NextTokenIs(): syntax error near '%s'.", nowToken) 
+        err := fmt.Sprintf("NextTokenIs(): syntax error near '%s', expected token: {%s} but got {%s}.", tokenNameMap[nowTokenType], tokenNameMap[tokenType], tokenNameMap[nowTokenType]) 
         panic(err)
     }
     return nowLineNum, nowToken
+}
+
+func (lexer *Lexer) LookAheadAndSkip(expectedType int) {
+    // get next token
+    nowLineNum                := lexer.lineNum
+    lineNum, tokenType, token := lexer.GetNextToken()
+    // not is expected type, reverse cursor
+    if tokenType != expectedType {
+        lexer.lineNum              = nowLineNum
+        lexer.nextTokenLineNum     = lineNum
+        lexer.nextTokenType        = tokenType
+        lexer.nextToken            = token
+    }
 }
 
 func (lexer *Lexer) LookAhead() int {
@@ -88,7 +103,8 @@ func (lexer *Lexer) skipSourceCode(n int) {
     lexer.sourceCode = lexer.sourceCode[n:]
 }
 
-func (lexer *Lexer) skipIgnored() {
+func (lexer *Lexer) isIgnored() bool {
+    isIgnored := false
     // target pattern
     isNewLine := func(c byte) bool {
         return c == '\r' || c == '\n'
@@ -105,15 +121,19 @@ func (lexer *Lexer) skipIgnored() {
         if lexer.nextSourceCodeIs("\r\n") || lexer.nextSourceCodeIs("\n\r") {
             lexer.skipSourceCode(2)
             lexer.lineNum += 1
+            isIgnored = true
         } else if isNewLine(lexer.sourceCode[0]) {
             lexer.skipSourceCode(1)
             lexer.lineNum += 1
+            isIgnored = true
         } else if isWhiteSpace(lexer.sourceCode[0]) {
             lexer.skipSourceCode(1)
+            isIgnored = true
         } else {
             break
         } 
     }
+    return isIgnored
 }
 
 func (lexer *Lexer) scan(regexp *regexp.Regexp) string {
@@ -155,13 +175,14 @@ func (lexer *Lexer) GetNextToken() (lineNum int, tokenType int, token string) {
 }
 
 func (lexer *Lexer) MatchToken() (lineNum int, tokenType int, token string) {
-    // skip spaces
-    lexer.skipIgnored()
+    // check ignored
+    if lexer.isIgnored() {
+        return lexer.lineNum, TOKEN_IGNORED, "Ignored"
+    }
     // finish
     if len(lexer.sourceCode) == 0 {
         return lexer.lineNum, TOKEN_EOF, tokenNameMap[TOKEN_EOF]
     }
-
     // check token
     switch lexer.sourceCode[0] {
     case '$' :
@@ -184,7 +205,6 @@ func (lexer *Lexer) MatchToken() (lineNum int, tokenType int, token string) {
         lexer.skipSourceCode(1)
         return lexer.lineNum, TOKEN_QUOTE, "\""
     }
-
     // check multiple character token
     if lexer.sourceCode[0] == '_' || isLetter(lexer.sourceCode[0]) {
         token := lexer.scanName()
@@ -194,7 +214,6 @@ func (lexer *Lexer) MatchToken() (lineNum int, tokenType int, token string) {
             return lexer.lineNum, TOKEN_NAME, token
         }
     }
-
     // unexpected symbol
     err := fmt.Sprintf("MatchToken(): unexpected symbol near '%q'.", lexer.sourceCode[0])
     panic(err)
