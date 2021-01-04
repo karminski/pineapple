@@ -4,7 +4,6 @@ import (
     "errors"
 )
 
-
 // Name ::= [_A-Za-z][_0-9A-Za-z]*
 func parseName(lexer *Lexer) (string, error) {
     _, name := lexer.NextTokenIs(TOKEN_NAME)
@@ -16,11 +15,14 @@ func parseString(lexer *Lexer) (string, error) {
     str := "" 
     switch lexer.LookAhead() {
     case TOKEN_DUOQUOTE:
+        lexer.NextTokenIs(TOKEN_DUOQUOTE)
+        lexer.LookAheadAndSkip(TOKEN_IGNORED)
         return str, nil 
     case TOKEN_QUOTE:
         lexer.NextTokenIs(TOKEN_QUOTE)
         str = lexer.scanBeforeToken(tokenNameMap[TOKEN_QUOTE])
         lexer.NextTokenIs(TOKEN_QUOTE)
+        lexer.LookAheadAndSkip(TOKEN_IGNORED)
         return str, nil
     default:
         return "", errors.New("parseString(): not a string.")
@@ -37,9 +39,9 @@ func parseVariable(lexer *Lexer) (*Variable, error) {
     if variable.Name, err = parseName(lexer); err != nil {
         return nil, err
     }
+    lexer.LookAheadAndSkip(TOKEN_IGNORED)
     return &variable, nil
 }
-
 
 // Assignment  ::= Variable Ignored "=" Ignored String Ignored
 func parseAssignment(lexer *Lexer) (*Assignment, error) {
@@ -50,10 +52,13 @@ func parseAssignment(lexer *Lexer) (*Assignment, error) {
     if assignment.Variable, err = parseVariable(lexer); err != nil {
         return nil, err
     }
+    lexer.LookAheadAndSkip(TOKEN_IGNORED)
     lexer.NextTokenIs(TOKEN_EQUAL)
+    lexer.LookAheadAndSkip(TOKEN_IGNORED)
     if assignment.String, err = parseString(lexer); err != nil {
         return nil, err
     }
+    lexer.LookAheadAndSkip(TOKEN_IGNORED)
     return &assignment, nil
 }
 
@@ -65,10 +70,13 @@ func parsePrint(lexer *Lexer) (*Print, error) {
     print.LineNum = lexer.GetLineNum()
     lexer.NextTokenIs(TOKEN_PRINT)
     lexer.NextTokenIs(TOKEN_LEFT_PAREN)
+    lexer.LookAheadAndSkip(TOKEN_IGNORED)
     if print.Variable, err = parseVariable(lexer); err != nil {
         return nil, err
     }
+    lexer.LookAheadAndSkip(TOKEN_IGNORED)
     lexer.NextTokenIs(TOKEN_RIGHT_PAREN)
+    lexer.LookAheadAndSkip(TOKEN_IGNORED)
     return &print, nil
 }
 
