@@ -23,6 +23,8 @@ pen pineapple apple pen.
 
 - [牙医教你 450 行代码自制编程语言 - 1, 从 EBNF 开始](https://zhuanlan.zhihu.com/p/341405385)
 - [牙医教你 450 行代码自制编程语言 - 2, 两个魔法就可以实现永动机](https://zhuanlan.zhihu.com/p/341532964)
+- [牙医教你 450 行代码自制编程语言 - 3, 实现 Lexer 上篇](https://zhuanlan.zhihu.com/p/341840788)
+- [牙医教你 450 行代码自制编程语言 - 4, 实现 Lexer 下篇](https://zhuanlan.zhihu.com/p/342036670)
 - 未完待续
 
 # Contributors
