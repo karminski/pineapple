@@ -97,6 +97,7 @@ func parseStatements(lexer *Lexer) ([]Statement, error) {
 }
 
 func parseStatement(lexer *Lexer) (Statement, error) {
+    lexer.LookAheadAndSkip(TOKEN_IGNORED) // skip if source code start with ignored token
     switch lexer.LookAhead() {
     case TOKEN_PRINT:
         return parsePrint(lexer)
