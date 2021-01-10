@@ -25,7 +25,10 @@ pen pineapple apple pen.
 - [牙医教你 450 行代码自制编程语言 - 2, 两个魔法就可以实现永动机](https://zhuanlan.zhihu.com/p/341532964)
 - [牙医教你 450 行代码自制编程语言 - 3, 实现 Lexer 上篇](https://zhuanlan.zhihu.com/p/341840788)
 - [牙医教你 450 行代码自制编程语言 - 4, 实现 Lexer 下篇](https://zhuanlan.zhihu.com/p/342036670)
-- 未完待续
+- [牙医教你 450 行代码自制编程语言 - 5, 递归下降语法解析器](https://zhuanlan.zhihu.com/p/342333858)
+- [牙医教你 450 行代码自制编程语言 - 6, 后端](https://zhuanlan.zhihu.com/p/342457860)
+- [牙医教你 450 行代码自制编程语言 - 7, 后续该如何学习编译原理](https://zhuanlan.zhihu.com/p/342982862)
+
 
 # Contributors
 
