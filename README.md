@@ -6,7 +6,7 @@ PINEAPPLE
 
 # Description
 
-Pineapple Lang is a simple programming language demo. It includes a hand-written recursive descent parser and a simple interpreter, although the language is not even Turing-complete. But this repo's main goal is to give beginners of compilation principles a warm up and a simple look at how a programming language is built.
+Pineapple Lang is a simple programming language demo implements by Go. It includes a hand-written recursive descent parser and a simple interpreter, although the language is not even Turing-complete. But this repo's main goal is to give beginners of compilation principles a warm up and a simple look at how a programming language is built.
 
 
 # How to run
@@ -18,6 +18,14 @@ $ ./pineapple hello-world.pineapple
 pen pineapple apple pen.
 
 ```
+
+# May be other Language?
+
+Don't worry, we have other pineapple-lang implements for you:  
+
+- Python implements, by [KevinXuxuxu](https://github.com/KevinXuxuxu) : [pineapple-py](https://github.com/KevinXuxuxu/pineapple-py)
+- TypeScript implements, by [liulinboyi](https://github.com/liulinboyi) : [pineapple-ts](https://github.com/liulinboyi/pineapple-ts)
+
 
 # Tutorial
 

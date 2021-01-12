@@ -6,7 +6,7 @@ PINEAPPLE
 
 # 说明
 
-pineapple lang 是一个简单的编程语言 demo. 它包含了个手写的递归下降解析器和一个简单的解释器. 虽然该语言甚至不是图灵完备的. 但 pineapple 的主要目的是让编译原理初学者有一个预热, 简单了解一个编程语言是怎么构建的.  
+pineapple lang 是一个用 Go 语言实现的简单的编程语言 demo. 它包含了个手写的递归下降解析器和一个简单的解释器. 虽然该语言甚至不是图灵完备的. 但 pineapple 的主要目的是让编译原理初学者有一个预热, 简单了解一个编程语言是怎么构建的.  
 
 
 # 运行
@@ -18,6 +18,15 @@ $ ./pineapple hello-world.pineapple
 pen pineapple apple pen.
 
 ```
+
+
+# 不会Go语言怎么办?
+
+别担心, 我们还有其他版本:  
+
+- Python 版本, 由 [KevinXuxuxu](https://github.com/KevinXuxuxu) 贡献: [pineapple-py](https://github.com/KevinXuxuxu/pineapple-py)
+- TypeScript 版本, 由 [liulinboyi](https://github.com/liulinboyi) 贡献: [pineapple-ts](https://github.com/liulinboyi/pineapple-ts)
+
 
 # 小教程
 
