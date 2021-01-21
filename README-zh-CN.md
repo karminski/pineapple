@@ -28,6 +28,7 @@ pen pineapple apple pen.
 - TypeScript 版本, 由 [liulinboyi](https://github.com/liulinboyi) 贡献: [pineapple-ts](https://github.com/liulinboyi/pineapple-ts)
 - Dart 版本, 由 [damonchen](https://github.com/damonchen) 贡献 : [dart-pineapple](https://github.com/damonchen/dart-pineapple)
 - Java 版本, 由 [LionCoder4ever](https://github.com/LionCoder4ever) 贡献: [pineapple-java](https://github.com/LionCoder4ever/pineapple-java)
+- Java 版本2, 由 [xiaofine1122](https://github.com/xiaofine1122) 贡献: [pineapple-java](https://github.com/xiaofine1122/pineapple-java)
 - Ruby 版本, 由 [YoogoC](https://github.com/YoogoC) 贡献: [pineapple-ruby](https://github.com/YoogoC/pineapple-ruby)
 
 
