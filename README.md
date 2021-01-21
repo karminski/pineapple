@@ -27,6 +27,8 @@ Don't worry, we have other pineapple-lang implements for you:
 - TypeScript implements, by [liulinboyi](https://github.com/liulinboyi) : [pineapple-ts](https://github.com/liulinboyi/pineapple-ts)
 - Dart implements, by [damonchen](https://github.com/damonchen) : [dart-pineapple](https://github.com/damonchen/dart-pineapple)
 - Java implements, by [LionCoder4ever](https://github.com/LionCoder4ever) : [pineapple-java](https://github.com/LionCoder4ever/pineapple-java)
+- Ruby implements, by [YoogoC](https://github.com/YoogoC) : [pineapple-ruby](https://github.com/YoogoC/pineapple-ruby)
+
 
 # Tutorial
 
