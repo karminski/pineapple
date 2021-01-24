@@ -29,7 +29,7 @@ Don't worry, we have other pineapple-lang implements for you:
 - Java implements, by [LionCoder4ever](https://github.com/LionCoder4ever) : [pineapple-java](https://github.com/LionCoder4ever/pineapple-java)
 - Another Java implements, by [xiaofine1122](https://github.com/xiaofine1122) : [pineapple-java](https://github.com/xiaofine1122/pineapple-java)
 - Ruby implements, by [YoogoC](https://github.com/YoogoC) : [pineapple-ruby](https://github.com/YoogoC/pineapple-ruby)
-- C# implements, by [KamioRinn](https://github.com/KamioRinn) : [pineapple-ruby](https://github.com/KamioRinn/pineapple-csharp)
+- C# implements, by [KamioRinn](https://github.com/KamioRinn) : [pineapple-csharp](https://github.com/KamioRinn/pineapple-csharp)
 - Rust implements, by [Max-astro](https://github.com/Max-astro) : [pineapple-rs](https://github.com/Max-astro/pineapple-rs)
 
 
