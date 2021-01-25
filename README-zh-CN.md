@@ -32,6 +32,7 @@ pen pineapple apple pen.
 - Ruby 版本, 由 [YoogoC](https://github.com/YoogoC) 贡献: [pineapple-ruby](https://github.com/YoogoC/pineapple-ruby)
 - C# 版本, 由 [KamioRinn](https://github.com/KamioRinn) 贡献: [pineapple-csharp](https://github.com/KamioRinn/pineapple-csharp)
 - Rust 版本, 由 [Max-astro](https://github.com/Max-astro) 贡献: [pineapple-rs](https://github.com/Max-astro/pineapple-rs)
+- Scala 版本, 由 [lzy0505](https://github.com/lzy0505) 贡献: [pineapple-scala](https://github.com/lzy0505/pineapple-scala)
 
 
 # 小教程
