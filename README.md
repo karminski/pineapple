@@ -6,35 +6,37 @@ PINEAPPLE
 
 # Description
 
-Pineapple Lang is a simple programming language demo implements by Go. It includes a hand-written recursive descent parser and a simple interpreter, although the language is not even Turing-complete. But this repo's main goal is to give beginners of compilation principles a warm up and a simple look at how a programming language is built.
+Go implementation of Pineapple, a simple programming language demo. Includes a hand-written recursive descent parser and a simple interpreter.
+
+The language is not even Turing-complete, however, it is meant to introduce compiler theory to beginners and shed light on how a programming language is built.
 
 
-# How to run
+# Usage
 
-```terminal
-$cd examples/pineapple/
-$go build
-$ ./pineapple hello-world.pineapple
-pen pineapple apple pen.
-
+```sh
+cd examples/pineapple/
+go build
+./pineapple hello-world.pineapple
+# You got "pen pineapple apple pen."
 ```
 
-# May be other Language?
 
-Don't worry, we have other pineapple-lang implements for you:  
+# Other implementations
 
-- Python implements, by [KevinXuxuxu](https://github.com/KevinXuxuxu) : [pineapple-py](https://github.com/KevinXuxuxu/pineapple-py)
-- TypeScript implements, by [liulinboyi](https://github.com/liulinboyi) : [pineapple-ts](https://github.com/liulinboyi/pineapple-ts)
-- Dart implements, by [damonchen](https://github.com/damonchen) : [dart-pineapple](https://github.com/damonchen/dart-pineapple)
-- Java implements, by [LionCoder4ever](https://github.com/LionCoder4ever) : [pineapple-java](https://github.com/LionCoder4ever/pineapple-java)
-- Another Java implements, by [xiaofine1122](https://github.com/xiaofine1122) : [pineapple-java](https://github.com/xiaofine1122/pineapple-java)
-- Ruby implements, by [YoogoC](https://github.com/YoogoC) : [pineapple-ruby](https://github.com/YoogoC/pineapple-ruby)
-- C# implements, by [KamioRinn](https://github.com/KamioRinn) : [pineapple-csharp](https://github.com/KamioRinn/pineapple-csharp)
-- Rust implements, by [Max-astro](https://github.com/Max-astro) : [pineapple-rs](https://github.com/Max-astro/pineapple-rs)
-- Scala implements, by [lzy0505](https://github.com/lzy0505) : [pineapple-scala](https://github.com/lzy0505/pineapple-scala)
+Other implementations of the Pineapple language:
+
+- Python implemention, by [KevinXuxuxu](https://github.com/KevinXuxuxu) : [pineapple-py](https://github.com/KevinXuxuxu/pineapple-py)
+- TypeScript implemention, by [liulinboyi](https://github.com/liulinboyi) : [pineapple-ts](https://github.com/liulinboyi/pineapple-ts)
+- Dart implemention, by [damonchen](https://github.com/damonchen) : [dart-pineapple](https://github.com/damonchen/dart-pineapple)
+- Java implemention, by [LionCoder4ever](https://github.com/LionCoder4ever) : [pineapple-java](https://github.com/LionCoder4ever/pineapple-java)
+- Another Java implemention, by [xiaofine1122](https://github.com/xiaofine1122) : [pineapple-java](https://github.com/xiaofine1122/pineapple-java)
+- Ruby implemention, by [YoogoC](https://github.com/YoogoC) : [pineapple-ruby](https://github.com/YoogoC/pineapple-ruby)
+- C# implemention, by [KamioRinn](https://github.com/KamioRinn) : [pineapple-csharp](https://github.com/KamioRinn/pineapple-csharp)
+- Rust implemention, by [Max-astro](https://github.com/Max-astro) : [pineapple-rs](https://github.com/Max-astro/pineapple-rs)
+- Scala implemention, by [lzy0505](https://github.com/lzy0505) : [pineapple-scala](https://github.com/lzy0505/pineapple-scala)
 
 
-# Tutorial
+# Tutorials
 
 - [Build a Programming language in 450 lines - 1, Start with EBNF](https://zhuanlan.zhihu.com/p/341405385)
 - [Build a Programming language in 450 lines - 2, Two Magic](https://zhuanlan.zhihu.com/p/341532964)
