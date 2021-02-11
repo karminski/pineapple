@@ -33,7 +33,7 @@ pen pineapple apple pen.
 - C# 版本, 由 [KamioRinn](https://github.com/KamioRinn) 贡献: [pineapple-csharp](https://github.com/KamioRinn/pineapple-csharp)
 - Rust 版本, 由 [Max-astro](https://github.com/Max-astro) 贡献: [pineapple-rs](https://github.com/Max-astro/pineapple-rs)
 - Scala 版本, 由 [lzy0505](https://github.com/lzy0505) 贡献: [pineapple-scala](https://github.com/lzy0505/pineapple-scala)
-
+- F# 版本, 由 [Nomyfan](https://github.com/Nomyfan) 贡献: [pineapple-fsharp](https://github.com/Nomyfan/pineapple-fsharp)
 
 # 小教程
 

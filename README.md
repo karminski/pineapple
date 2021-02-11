@@ -32,6 +32,7 @@ Don't worry, we have other pineapple-lang implements for you:
 - C# implements, by [KamioRinn](https://github.com/KamioRinn) : [pineapple-csharp](https://github.com/KamioRinn/pineapple-csharp)
 - Rust implements, by [Max-astro](https://github.com/Max-astro) : [pineapple-rs](https://github.com/Max-astro/pineapple-rs)
 - Scala implements, by [lzy0505](https://github.com/lzy0505) : [pineapple-scala](https://github.com/lzy0505/pineapple-scala)
+- F# implements, by [Nomyfan](https://github.com/Nomyfan) : [pineapple-fsharp](https://github.com/Nomyfan/pineapple-fsharp)
 
 
 # Tutorial
