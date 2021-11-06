@@ -35,6 +35,7 @@ pen pineapple apple pen.
 - Scala 版本, 由 [lzy0505](https://github.com/lzy0505) 贡献: [pineapple-scala](https://github.com/lzy0505/pineapple-scala)
 - F# 版本, 由 [Nomyfan](https://github.com/Nomyfan) 贡献: [pineapple-fsharp](https://github.com/Nomyfan/pineapple-fsharp)
 - PHP 版本, 由 [Y!an](https://github.com/YianAndCode) 贡献: [pineapple-php](https://github.com/YianAndCode/pineapple-php)
+- C 版本, 由 [Y!an](https://github.com/YianAndCode) 贡献: [pineapple-c](https://github.com/YianAndCode/pineapple-c)
 
 # 小教程
 
