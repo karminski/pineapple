@@ -35,6 +35,7 @@ Don't worry, we have other pineapple-lang implements for you:
 - F# implements, by [Nomyfan](https://github.com/Nomyfan) : [pineapple-fsharp](https://github.com/Nomyfan/pineapple-fsharp)
 - PHP implements, by [Y!an](https://github.com/YianAndCode) : [pineapple-php](https://github.com/YianAndCode/pineapple-php)
 - C implements, by [Y!an](https://github.com/YianAndCode) : [pineapple-c](https://github.com/YianAndCode/pineapple-c)
+- Hacklang implements, by [Evi1ran](https://github.com/Evilran) : [pineapple-hack](https://github.com/Evilran/pineapple-hack)
 
 
 # Tutorial

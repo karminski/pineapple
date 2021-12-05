@@ -36,6 +36,7 @@ pen pineapple apple pen.
 - F# 版本, 由 [Nomyfan](https://github.com/Nomyfan) 贡献: [pineapple-fsharp](https://github.com/Nomyfan/pineapple-fsharp)
 - PHP 版本, 由 [Y!an](https://github.com/YianAndCode) 贡献: [pineapple-php](https://github.com/YianAndCode/pineapple-php)
 - C 版本, 由 [Y!an](https://github.com/YianAndCode) 贡献: [pineapple-c](https://github.com/YianAndCode/pineapple-c)
+- Hacklang 版本, 由 [Evi1ran](https://github.com/Evilran) 贡献: [pineapple-hack](https://github.com/Evilran/pineapple-hack)
 
 # 小教程
 
