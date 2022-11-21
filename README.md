@@ -34,8 +34,10 @@ Don't worry, we have other pineapple-lang implements for you:
 - Scala implements, by [lzy0505](https://github.com/lzy0505) : [pineapple-scala](https://github.com/lzy0505/pineapple-scala)
 - F# implements, by [Nomyfan](https://github.com/Nomyfan) : [pineapple-fsharp](https://github.com/Nomyfan/pineapple-fsharp)
 - PHP implements, by [Y!an](https://github.com/YianAndCode) : [pineapple-php](https://github.com/YianAndCode/pineapple-php)
+- Swift implements, by [dev-xdyang](https://github.com/dev-xdyang) : [pineapple-swift](https://github.com/dev-xdyang/pineapple-swift)
 - C implements, by [Y!an](https://github.com/YianAndCode) : [pineapple-c](https://github.com/YianAndCode/pineapple-c)
 - Hacklang implements, by [Evi1ran](https://github.com/Evilran) : [pineapple-hack](https://github.com/Evilran/pineapple-hack)
+
 
 
 # Tutorial
